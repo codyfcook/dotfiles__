@@ -15,7 +15,7 @@
         branch = auto
         ui = true
 [core]
-        excludesfile = ~/.gitignore
+	excludesfile = /Users/rocky.assad/.gitignore
         editor = vim
 [apply]
         whitespace = nowarn
@@ -37,3 +37,9 @@
 	url = https://premise.atlassian.net
 [init]
 	templateDir = /Users/rocky.assad/.git_templates
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
