@@ -36288,7 +36288,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/.dotfiles/iterm2.symlink</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -36317,25 +36317,11 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>660 918 885 172 619 800 1920 1080 </string>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>-651 1298 620 392 -1301 800 1920 1057 </string>
-	<key>NSWindow Frame SessionsPreferences</key>
-	<string>138 167 606 456 0 0 1280 800 </string>
+	<string>440 37 765 205 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>110 175 918 512 0 0 1280 777 </string>
+	<string>223 345 918 381 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>622 807 1914 1044 619 800 1920 1057 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1914 1044 0 0 1280 777 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>986 1170 570 404 619 800 1920 1057 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
-	<string>7 366 570 404 0 0 1280 777 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>194 4 570 404 0 0 1280 800 </string>
-	<key>NSWindow Frame iTerm Window 5</key>
-	<string>834 1167 570 404 619 800 1920 1057 </string>
+	<string>5 405 976 372 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_A8E3F48E-A09F-4789-9B47-086B4EBB7E6C</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A8E3F48E-A09F-4789-9B47-086B4EBB7E6C_selection</key>
@@ -36372,57 +36358,57 @@
 			<key>Ansi 10 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.15686274509803921</real>
+				<real>0.42352941176470588</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.15686274509803921</real>
+				<real>0.70980392156862748</real>
 				<key>Red Component</key>
-				<real>0.15686274509803921</real>
+				<real>0.63137254901960782</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.2196078431372549</real>
+				<real>0.53333333333333333</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.2196078431372549</real>
+				<real>0.792156862745098</real>
 				<key>Red Component</key>
-				<real>0.2196078431372549</real>
+				<real>0.96862745098039216</real>
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.72156862745098038</real>
+				<real>0.76078431372549016</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.72156862745098038</real>
+				<real>0.68627450980392157</real>
 				<key>Red Component</key>
-				<real>0.72156862745098038</real>
+				<real>0.48627450980392156</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.90980392156862744</real>
+				<real>0.68627450980392157</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.90980392156862744</real>
+				<real>0.54509803921568623</real>
 				<key>Red Component</key>
-				<real>0.90980392156862744</real>
+				<real>0.72941176470588232</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.27450980392156865</real>
+				<real>0.72549019607843135</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.41176470588235292</real>
+				<real>0.75686274509803919</real>
 				<key>Red Component</key>
-				<real>0.63137254901960782</real>
+				<real>0.52549019607843139</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -36515,13 +36501,13 @@
 			<key>Ansi 9 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.33725490196078434</real>
+				<real>0.25882352941176473</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.58823529411764708</real>
+				<real>0.27450980392156865</real>
 				<key>Red Component</key>
-				<real>0.86274509803921573</real>
+				<real>0.6705882352941176</real>
 			</dict>
 			<key>BM Growl</key>
 			<true/>
@@ -36950,7 +36936,7 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>SauceCodePowerline-ExtraLight 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -37012,7 +36998,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<false/>
+			<true/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -37023,18 +37009,22 @@
 			<string>/Users/rocky.assad/code</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
+	<key>NoSyncInstallUtilitiesPackage</key>
+	<true/>
+	<key>NoSyncInstallUtilitiesPackage_selection</key>
+	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
-	<string>D64ABAB0-906D-4090-8968-2356E809571A</string>
+	<string>C3C3F3BD-3633-48A1-8A36-E59A3B1A0943</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
-	<key>NoSyncPermissionToShowTip</key>
-	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>497459908.417054</real>
+	<real>502842887.16982299</real>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PasteTabToStringTabStopSize</key>
@@ -37073,7 +37063,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/rocky.assad/.iterm2</string>
+	<string>/Users/rocky.assad/.dotfiles/iterm2.symlink</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -37081,11 +37071,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=66</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=84</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-12-06T19:14:20Z</date>
+	<date>2016-12-07T22:37:32Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowNewOutputIndicator</key>

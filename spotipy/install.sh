@@ -2,6 +2,6 @@
 
 echo '[ Installing Spotipy ]'
 
-pip install spotipy
+sudo -H pip install spotipy
 
 echo '[ Finished installing Spotipy ]'
