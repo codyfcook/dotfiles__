@@ -30,6 +30,7 @@ brew 'zsh'
 
 cask '1password'
 cask 'atom'
+cask 'bartender'
 cask 'caffeine'
 cask 'carbon-copy-cloner'
 cask 'flux'
@@ -47,6 +48,7 @@ cask 'slack'
 cask 'spectacle'
 cask 'spotify'
 cask 'transmission'
+cask 'mysqlworkbench'
 
 mas 'microsoft-remote-desktop', id: 715768417
 mas 'onedrive', id: 823766827

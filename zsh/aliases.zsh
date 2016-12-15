@@ -4,7 +4,7 @@ alias reload!='. ~/.zshrc'
 alias name='scutil --get ComputerName' # get computer name
 
 # Mysql
-alias importdb='echo "mysql -u <username> -p <databasename> < <filename.sql>"'
+alias importdb='echo "mysql -u <username> [-p <databasename> -D <database name>] < <filename.sql>"'
 alias restartdb='mysql.server restart'
 alias startdb='mysql.server start'
 alias stopdb='mysql.server stop'
