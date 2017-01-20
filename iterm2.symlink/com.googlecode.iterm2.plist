@@ -36285,6 +36285,14 @@
 	<true/>
 	<key>HideTabNumber</key>
 	<false/>
+	<key>Hotkey</key>
+	<false/>
+	<key>HotkeyChar</key>
+	<integer>116</integer>
+	<key>HotkeyCode</key>
+	<integer>17</integer>
+	<key>HotkeyModifiers</key>
+	<integer>1048840</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
@@ -36316,12 +36324,25 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>440 37 765 205 0 0 1280 777 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>25 639 400 129 0 0 1280 777 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>-645 1298 620 392 -1295 800 1920 1057 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>1193 1106 606 456 931 800 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>223 345 918 381 0 0 1280 777 </string>
+	<string>1143 1318 796 473 625 800 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>5 405 976 372 0 0 1280 777 </string>
+	<string>3 0 1274 1049 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>5 357 570 404 0 0 1280 800 </string>
 	<key>NeverWarnAboutShortLivedSessions_A8E3F48E-A09F-4789-9B47-086B4EBB7E6C</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A8E3F48E-A09F-4789-9B47-086B4EBB7E6C_selection</key>
@@ -37019,12 +37040,42 @@
 	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
 	<string>C3C3F3BD-3633-48A1-8A36-E59A3B1A0943</string>
+	<key>NoSyncLastTipTime</key>
+	<real>505842975.90882498</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>502842887.16982299</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PasteTabToStringTabStopSize</key>
@@ -37075,7 +37126,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-12-07T22:37:32Z</date>
+	<date>2017-01-11T15:46:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowNewOutputIndicator</key>
@@ -37087,6 +37138,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.12</string>
+	<string>3.0.13</string>
 </dict>
 </plist>
