@@ -294,4 +294,16 @@ call plug#end()
 
 colorscheme tomorrow-night-eighties
 
+" Open nerdtree with focus on taba
+augroup NERD
+    au!
+    autocmd VimEnter * NERDTree
+    autocmd VimEnter * wincmd p
+augroup END
+
+" Don't continue comments on next line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Nerdtree quit if only one buffer open 
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 

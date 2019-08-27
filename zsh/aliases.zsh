@@ -3,6 +3,9 @@ alias 'yen3'='ssh codycook@yen3.stanford.edu'
 alias 'yen2'='ssh codycook@yen2.stanford.edu' 
 alias 'yen1'='ssh codycook@yen1.stanford.edu' 
 
+# SCP yens
+alias scp3='scp codycook@yen3.stanford.edu:~/projects/'
+
 # Reload it all
 alias reload!='. ~/.zshrc'
 alias name='scutil --get ComputerName' # get computer name
@@ -33,4 +36,10 @@ alias lsg='ll | grep'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+
+# Function for scp to yen
+function scpy()
+{
+scp $1 "codycook@yen3.stanford.edu:~/projects/$2"
+}
 
