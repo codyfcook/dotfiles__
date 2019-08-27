@@ -27,22 +27,6 @@ fail () {
   exit
 }
 
-setup_config_dir () {
-  echo '[ Cloning .config dir repos ]'
-  cd $HOME/.config
-
-  git clone https://github.com/chriskempson/base16-iterm2.git
-  git clone https://github.com/chriskempson/base16-shell.git
-  git clone https://github.com/chriskempson/base16-vim.git
-  git clone https://github.com/powerline/fonts.git
-  git clone https://github.com/ronilaukkarinen/weed.git
-
-  echo '[ Installing fonts ]'
-  cd fonts
-  sh ./install.sh
-
-  echo '[ Finished installing fonts ]'
-}
 
 setup_gitconfig () {
   if ! [ -f git/gitconfig.local.symlink ]
@@ -156,22 +140,6 @@ install_dotfiles () {
 
 setup_gitconfig
 install_dotfiles
-setup_config_dir
-
-echo '[ Installing pip ]'
-sudo easy_install pip
-
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
-then
-  info "installing dependencies"
-  if source bin/dot > /tmp/dotfiles-dot 2>&1
-  then
-    success "dependencies installed"
-  else
-    fail "error installing dependencies"
-  fi
-fi
 
 echo ''
 echo '  All installed!'
