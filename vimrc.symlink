@@ -168,17 +168,17 @@ autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 " NERDTree:
 """""""""""""""""""""""""""""""""
 " open when vim opens
-" autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree
 
 " open when C-j
-" map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
-" let g:loaded_netrw       = 1
-" let g:loaded_netrwPlugin = 1
+let g:loaded_netrw       = 1
+let g:loaded_netrwPlugin = 1
 
 " change arrows
-" let g:NERDTreeDirArrowExpandable = '৩'
-" let g:NERDTreeDirArrowCollapsible = '২'
+let g:NERDTreeDirArrowExpandable = '৩'
+let g:NERDTreeDirArrowCollapsible = '২'
 
 
 """""""""""""""""""""""""""""""""
