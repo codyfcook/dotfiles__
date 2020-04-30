@@ -1,0 +1,6 @@
+alias ls='ls -hl'
+alias ta='tmux attach -t '
+alias yen='ssh -Y  codycook@yen2.stanford.edu'
+alias yen1='ssh -Y  codycook@yen1.stanford.edu'
+alias yen3='ssh -Y  codycook@yen3.stanford.edu'
+alias yen4='ssh -Y  codycook@yen4.stanford.edu'
