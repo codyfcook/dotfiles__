@@ -3,8 +3,8 @@ alias 'yen3'='ssh codycook@yen3.stanford.edu'
 alias 'yen2'='ssh codycook@yen2.stanford.edu' 
 alias 'yen1'='ssh codycook@yen1.stanford.edu' 
 
-# SCP yens
-alias scp3='scp codycook@yen3.stanford.edu:~/projects/'
+# Shortcuts 
+alias cc1='cd /Volumes/CC_1'
 
 # Reload it all
 alias reload!='. ~/.zshrc'
@@ -40,6 +40,10 @@ alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune &&
 # Function for scp to yen
 function scpy()
 {
-scp $1 "codycook@yen3.stanford.edu:~/projects/$2"
+scp -r $1 "codycook@yen3.stanford.edu:~/projects/$2"
 }
 
+function scpyf()
+{
+scp -r "codycook@yen3.stanford.edu:~/projects/$2" $1
+}
