@@ -5,6 +5,10 @@ call plug#begin('~/.vim/plugged')
 """""""""""""""""""""""""""""""""
 " VIM:
 """""""""""""""""""""""""""""""""
+
+" Pathogen 
+execute pathogen#infect()
+
 " wrap gitcommit file types at the appropriate length
 filetype indent plugin on
 
@@ -131,7 +135,6 @@ vmap <leader>s :sort<cr>
 
 " smash escape
 inoremap jk <esc>
-inoremap kj <esc>
 
 " change cursor position in insert mode
 inoremap <C-h> <left>
@@ -192,31 +195,6 @@ let g:airline_powerline_fonts = 1
 
 " show status line all the time
 set laststatus=2
-
-
-"""""""""""""""""""""""""""""""""
-" ESlint:
-"""""""""""""""""""""""""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['eslint']
-
-let g:syntastic_error_symbol = 'ȩ'
-let g:syntastic_style_error_symbol = 'ȿȩ'
-let g:syntastic_warning_symbol = 'Ŵ'
-let g:syntastic_style_warning_symbol = 'ȿŴ'
-
-highlight link SyntasticErrorSign SignColumn
-highlight link SyntasticWarningSign SignColumn
-highlight link SyntasticStyleErrorSign SignColumn
-highlight link SyntasticStyleWarningSign SignColumn
 
 """""""""""""""""""""""""""""""""
 " YUNO:
@@ -307,3 +285,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Nerdtree quit if only one buffer open 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Shift tab
+nnoremap <S-Tab> <<
+inoremap <S-Tab> <C-d>
