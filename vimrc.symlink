@@ -5,6 +5,12 @@ call plug#begin('~/.vim/plugged')
 """""""""""""""""""""""""""""""""
 " VIM:
 """""""""""""""""""""""""""""""""
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
 " Pathogen 
 execute pathogen#infect()
@@ -90,7 +96,6 @@ set incsearch " be like search in modern browsers
 "set autochdir
 
 " Map space to / (search)
-map <space> /
 map <silent> <leader><cr> :noh<cr>
 
 " Enable mouse (if terminal has support for it)
@@ -135,7 +140,6 @@ vmap <leader>s :sort<cr>
 
 " smash escape
 inoremap jk <esc>
-inoremap kj <esc>
 
 " change cursor position in insert mode
 inoremap <C-h> <left>
@@ -144,6 +148,17 @@ inoremap <C-l> <right>
  " reselect visual block after indent
 vnoremap < <gv
 vnoremap > >gv
+
+"""""""""""""""""""""""""""""""""
+" VUNDLE: 
+"""""""""""""""""""""""""""""""""
+" Plugin 'ycm-core/YouCompleteMe'
+Plugin 'supertab'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 
 """""""""""""""""""""""""""""""""
 " GIST:
@@ -196,31 +211,6 @@ let g:airline_powerline_fonts = 1
 
 " show status line all the time
 set laststatus=2
-
-
-"""""""""""""""""""""""""""""""""
-" ESlint:
-"""""""""""""""""""""""""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['eslint']
-
-let g:syntastic_error_symbol = 'ȩ'
-let g:syntastic_style_error_symbol = 'ȿȩ'
-let g:syntastic_warning_symbol = 'Ŵ'
-let g:syntastic_style_warning_symbol = 'ȿŴ'
-
-highlight link SyntasticErrorSign SignColumn
-highlight link SyntasticWarningSign SignColumn
-highlight link SyntasticStyleErrorSign SignColumn
-highlight link SyntasticStyleWarningSign SignColumn
 
 """""""""""""""""""""""""""""""""
 " YUNO:
@@ -311,3 +301,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Nerdtree quit if only one buffer open 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Shift tab
+nnoremap <S-Tab> <<
+inoremap <S-Tab> <C-d>
