@@ -1,4 +1,5 @@
 syntax on
+"
 
 call plug#begin('~/.vim/plugged')
 
@@ -6,7 +7,7 @@ call plug#begin('~/.vim/plugged')
 " VIM:
 """""""""""""""""""""""""""""""""
 
-" Pathogen 
+" Pathogen
 execute pathogen#infect()
 
 " wrap gitcommit file types at the appropriate length
@@ -17,7 +18,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " no cowbells
-set noerrorbells 
+set noerrorbells
 " don't make it look like there are line breaks where there aren't:
 set nowrap
 
@@ -84,7 +85,7 @@ set smartcase " When searching try to be smart about cases
 set hlsearch " Highlight search resultsh
 set incsearch " be like search in modern browsers
 
-" Sometimes it is helpful if your working directory is 
+" Sometimes it is helpful if your working directory is
 " always the same as the file you are editing.
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 "set autochdir
@@ -208,7 +209,7 @@ let g:YUNOcommit_after = 10
 " Ternjs: run `npm install` the first time
 " .dotfiles/vim.symlink/plugged/tern_for_vim
 
-"Plug 'benmills/vimux' 
+"Plug 'benmills/vimux'
 "Plug 'geekjuice/vim-mocha'
 Plug 'Raimondi/delimitMate'
 Plug 'airblade/vim-gitgutter'
@@ -282,7 +283,7 @@ augroup END
 " Don't continue comments on next line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Nerdtree quit if only one buffer open 
+" Nerdtree quit if only one buffer open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Shift tab
